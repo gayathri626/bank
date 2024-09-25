@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+i{
+margin-top: 33px;
+}
+.navbtn{
+    border: transparent;
+    background-color: transparent;
+    font-size: larger;
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: dotted;
+}
+
+.footerbtn{
+    border: transparent;
+    background-color: transparent;
+    height: 20px;
+    font-size: xx-large;
+    padding-right: 10px;
+}
+.footer{
+    text-decoration: none;
+    color: #FFD43B;
+}
+.regBtn{
+    border: 1px solid #FFD43B;
+    border-radius: 9px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#register{
+    background-image: url(https://img.pikbest.com/wp/202405/piggy-bank-3d-render-of-yellow-background-with-coins-and-a_9797879.jpg!bw700);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box{
+    width: 200px;
+    background-color: #FFD43B;
+}

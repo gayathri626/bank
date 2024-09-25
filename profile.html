@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" id="favicon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <nav style="display: flex; justify-content: space-between;width: 1536px; height: 80px;background-color: rgb(255, 199, 39);">
+        <ul style="display: flex;  list-style: none; gap: 1rem;">
+            <i class="fa-solid fa-piggy-bank fa-2xl" style="color: #fffaea; margin-left: 30px;"></i>            
+            <li><h2 style="color: rgb(255, 250, 235); margin-top: 25px;">My Bank</h2></li>
+        </ul>
+        <ul style="display: flex; list-style: none; gap: 1rem;">
+            <li><button class="navbtn" style="padding-right: 40px;" onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div id="summaryContainer" style=" margin-top: 70px; margin-left: 240px;background-color: #FFD43B; padding-top: 10px; padding-bottom: 10px ; padding-left: 30px; padding-right: 30px; border-radius: 4px;width: 990px;display: flex;justify-content: space-between;">
+        <h2>Total Deposited: <br> <span id="totalDeposited">0</span></h2>
+        <h2>Total Withdrawn: <br> <span id="totalWithdrawn">0</span></h2>
+        <h2>Balance: <br> <span id="balance">0</span></h2>
+    </div>
+
+    <div style="display: flex; gap: 3rem; margin-top: 20px; margin-left: 240px;">
+        <div class="box">
+            <h2 style="display: flex; justify-content: center;">Deposit</h2><br>
+            <input type="text" id="depositAmount" placeholder="Enter Amount to be Deposited"> <br>
+            <input type="password" id="depositPassword" placeholder="Password"><br>
+            <input type="text" id="depositCategory" placeholder="Category"><br>
+            <button onclick="addTransaction('deposit')">Deposit</button>
+        </div>
+        <div class="box">
+            <h2 style="display: flex; justify-content: center;">Withdraw</h2><br>
+            <input type="text" id="withdrawAmount" placeholder="Enter Amount to be Withdrawn"> <br>
+            <input type="password" id="withdrawPassword" placeholder="Password"><br>
+            <input type="text" id="withdrawCategory" placeholder="Category"><br>
+            <button onclick="addTransaction('withdraw')">Withdraw</button>
+        </div>
+    </div>
+
+    <div id="transactionContainer" style="margin-top: 20px; margin-left: 240px;">
+        <h2 style="color: #d5ad1a;padding: 5px; border-radius: 4px;width: 1038px; font-size: xx-large;">Transaction History</h2>
+        <ul id="transactionList">
+            <li style="background-color: #FFD43B; width: 1040px;">
+                <span style="font-size:larger;">Type</span>
+                <span style="font-size:larger;">Amount</span>
+                <span style="font-size:larger;">Category</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+i{
+    margin-top: 33px;
+    }
+.box {
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    background-color: rgb(249, 244, 186);
+}
+input {
+    border: transparent;
+    width: 430px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-radius: 3px;
+}
+button {
+    margin-top: 10px;
+    margin-left: 224px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 5px;
+    background-color: rgb(213, 175, 7);
+
+}
+.navbtn{
+    border: transparent;
+    background-color: transparent;
+    color: rgb(255, 250, 235);
+    margin-top: 25px;
+    font-size: larger;
+}
+
+#transactionList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+#transactionList li span {
+    width: 33%;
+}
+
+/* Add this CSS to your profile.css file */
+#transactionList li {
+    border-bottom: 1px solid #FFD43B; 
+    width: 83%; 
+    /* margin: 0 auto;  */
+    padding-bottom: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 10px; 
+}
+
+#transactionList li span {
+    flex: 1; /* Ensure the content spans evenly across the width */
+    text-align: center; /* Center the content in each column */
+}
+
